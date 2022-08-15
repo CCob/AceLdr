@@ -22179,6 +22179,7 @@ typedef struct _CFG_CALL_TARGET_INFO {
 } CFG_CALL_TARGET_INFO, *PCFG_CALL_TARGET_INFO;
 #endif
 
+#ifndef SetProcessValidCallTargets 
 BOOLEAN
 WINAPI
 SetProcessValidCallTargets(
@@ -22188,6 +22189,7 @@ SetProcessValidCallTargets(
 	ULONG					NumberOfOffsets,
 	PCFG_CALL_TARGET_INFO 			CfgCallInfo
 	);
+#endif
 
 typedef struct __attribute__((packed))
 {
